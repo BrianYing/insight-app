@@ -60,29 +60,13 @@
 # if __name__ == '__main__':
 #     app.run(debug=True)
 
-#from flask import Flask, request
-#
-# app = Flask(__name__)
-#
-#
-# @app.route('/result', methods=['GET', 'POST'])
-# def result():
-#     if request.method == 'GET':
-#         place = request.args.get('place', None)
-#         if place:
-#             return place
-#         return "No place information is given"
-#
-#
-# if __name__ == '__main__':
-#     app.run(debug=True)
-
-# from scrapy import cmdline
-#
-# cmdline.execute("scrapy crawl seekingAlpha".split())
 
 import urllib.request
 from bs4 import BeautifulSoup
+
+from flask import Flask, request
+
+app = Flask(__name__)
 
 
 class Data:
@@ -144,9 +128,23 @@ def parse(company):
     return Data(stock_price, stock_trend, summary_dict, article_dict)
 
 
-if __name__ == '__main__':
-    comp = 'oxy'
-    # comp = 'gasx'
+@app.route('/result', methods=['GET', 'POST'])
+def result():
+    if request.method == 'GET':
+        place = request.args.get('place', None)
+        if place:
+            data = parse(place)
+            return data.price
+        return "No place information is given"
 
-    data = parse(comp)
-    print(data.price)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+# if __name__ == '__main__':
+#     comp = 'oxy'
+#     # comp = 'gasx'
+#
+#     data = parse(comp)
+#     print(data.price)

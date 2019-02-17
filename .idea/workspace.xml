@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb947507-1f53-4e4a-b21d-a9ccd918bb70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper/insight_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper/insight_app.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/insight_app$insight_app.coverage" NAME="insight_app Coverage Results" MODIFIED="1550395435754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scraper/insight_app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+              <folding>
+                <element signature="e#1503#1524#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>searchki</find>
+      <find>searchbox</find>
+      <find>imdbid</find>
+      <find>iconbutton</find>
+      <find>clear</find>
+      <find>cooki</find>
+      <find>item</find>
+      <find>delay</find>
+      <find>stor</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/component/Insight.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/scraper/scraper/items.py" />
+        <option value="$PROJECT_DIR$/scraper/scraper/spiders/seekingAlpha.py" />
+        <option value="$PROJECT_DIR$/scraper/scraper/settings.py" />
+        <option value="$PROJECT_DIR$/scraper/scraper/pipelines.py" />
+        <option value="$PROJECT_DIR$/insight_app.py" />
+        <option value="$PROJECT_DIR$/scraper/scraper/insight_app.py" />
+        <option value="$PROJECT_DIR$/scraper/insight_app.py" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
+    <option name="width" value="2048" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="false" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="insight-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insight-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insight-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insight-app" type="462c0819:PsiDirectoryNode" />
+              <item name="scraper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="insight-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="insight-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scraper" />
+      <recent name="$PROJECT_DIR$/scraper/scraper" />
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="insight_app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="insight-app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraper/insight_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.insight_app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb947507-1f53-4e4a-b21d-a9ccd918bb70" name="Default Changelist" comment="" />
+      <created>1550333758866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550333758866</updated>
+      <workItem from="1550333760664" duration="905000" />
+      <workItem from="1550334714074" duration="3065000" />
+      <workItem from="1550339119046" duration="11615000" />
+      <workItem from="1550362550078" duration="32267000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="47852000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="2048" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14785215" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" weight="0.32900432" />
+      <window_info anchor="bottom" id="TypeScript" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32900432" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.23268399" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="CheckStyle" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.29545453" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.old.md" />
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/searchkit/src/components/display/view-switcher/ViewSwitcherHits.tsx" />
+    <entry file="file://$PROJECT_DIR$/node_modules/searchkit/src/core/SearchkitManager.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/searchkit/src/components/search/hits/src/Hits.tsx" />
+    <entry file="file://$PROJECT_DIR$/node_modules/material-ui-search-bar/demo.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/material-ui-search-bar/lib/components/SearchBar/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/material-ui-search-bar/lib/components/SearchBar/SearchBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/background.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/scraper/sth.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/scrapy/spiderloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/scraper/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3021">
+          <folding>
+            <element signature="e#8025#8031#0" expanded="true" />
+            <element signature="e#8060#8066#0" expanded="true" />
+            <element signature="e#16743#16748#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#8;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#36361#36366#0" expanded="true" />
+            <element signature="e#46312#46318#1" expanded="true" />
+            <element signature="e#46344#46350#0" expanded="true" />
+            <element signature="e#47183#47189#1" expanded="true" />
+            <element signature="e#47215#47221#0" expanded="true" />
+            <element signature="e#48035#48041#1" expanded="true" />
+            <element signature="e#48067#48073#0" expanded="true" />
+            <element signature="e#48763#48769#1" expanded="true" />
+            <element signature="e#48795#48801#0" expanded="true" />
+            <element signature="e#49402#49408#1" expanded="true" />
+            <element signature="e#49434#49440#0" expanded="true" />
+            <element signature="e#50213#50219#1" expanded="true" />
+            <element signature="e#50245#50251#0" expanded="true" />
+            <element signature="e#51258#51264#1" expanded="true" />
+            <element signature="e#51290#51296#0" expanded="true" />
+            <element signature="e#52104#52110#1" expanded="true" />
+            <element signature="e#52136#52142#0" expanded="true" />
+            <element signature="e#52931#52937#1" expanded="true" />
+            <element signature="e#52963#52969#0" expanded="true" />
+            <element signature="e#53667#53673#1" expanded="true" />
+            <element signature="e#53699#53705#0" expanded="true" />
+            <element signature="e#53820#53826#1" expanded="true" />
+            <element signature="e#54136#54142#0" expanded="true" />
+            <element signature="e#54217#54222#0" expanded="true" />
+            <element signature="e#54860#54866#1" expanded="true" />
+            <element signature="e#54892#54898#0" expanded="true" />
+            <element signature="e#55177#55182#0" expanded="true" />
+            <element signature="e#55901#55907#1" expanded="true" />
+            <element signature="e#55933#55939#0" expanded="true" />
+            <element signature="e#56043#56049#1" expanded="true" />
+            <element signature="e#56549#56555#1" expanded="true" />
+            <element signature="e#56581#56587#0" expanded="true" />
+            <element signature="e#56713#56719#1" expanded="true" />
+            <element signature="e#57162#57168#1" expanded="true" />
+            <element signature="e#57194#57200#0" expanded="true" />
+            <element signature="e#57326#57332#1" expanded="true" />
+            <element signature="e#57774#57780#1" expanded="true" />
+            <element signature="e#57806#57812#0" expanded="true" />
+            <element signature="e#57922#57928#1" expanded="true" />
+            <element signature="e#58389#58395#1" expanded="true" />
+            <element signature="e#58421#58427#0" expanded="true" />
+            <element signature="e#58531#58537#1" expanded="true" />
+            <element signature="e#59086#59092#1" expanded="true" />
+            <element signature="e#59118#59124#0" expanded="true" />
+            <element signature="e#59258#59264#1" expanded="true" />
+            <element signature="e#59738#59743#0" expanded="true" />
+            <element signature="e#59938#59943#0" expanded="true" />
+            <element signature="e#60157#60162#0" expanded="true" />
+            <element signature="e#60514#60520#1" expanded="true" />
+            <element signature="e#60546#60552#0" expanded="true" />
+            <element signature="e#61156#61162#1" expanded="true" />
+            <element signature="e#61188#61194#0" expanded="true" />
+            <element signature="e#61295#61301#1" expanded="true" />
+            <element signature="e#61614#61620#0" expanded="true" />
+            <element signature="e#61721#61727#1" expanded="true" />
+            <element signature="e#62158#62164#1" expanded="true" />
+            <element signature="e#62190#62196#0" expanded="true" />
+            <element signature="e#62311#62317#1" expanded="true" />
+            <element signature="e#62768#62774#1" expanded="true" />
+            <element signature="e#62800#62806#0" expanded="true" />
+            <element signature="e#62909#62915#1" expanded="true" />
+            <element signature="e#63368#63374#1" expanded="true" />
+            <element signature="e#63400#63406#0" expanded="true" />
+            <element signature="e#63517#63523#1" expanded="true" />
+            <element signature="e#64253#64259#1" expanded="true" />
+            <element signature="e#64285#64291#0" expanded="true" />
+            <element signature="e#64877#64883#1" expanded="true" />
+            <element signature="e#64909#64915#0" expanded="true" />
+            <element signature="e#65663#65669#1" expanded="true" />
+            <element signature="e#65695#65701#0" expanded="true" />
+            <element signature="e#66084#66089#0" expanded="true" />
+            <element signature="e#66455#66461#1" expanded="true" />
+            <element signature="e#66487#66493#0" expanded="true" />
+            <element signature="e#66602#66608#1" expanded="true" />
+            <element signature="e#67081#67087#1" expanded="true" />
+            <element signature="e#67113#67119#0" expanded="true" />
+            <element signature="e#67246#67252#1" expanded="true" />
+            <element signature="e#67682#67688#1" expanded="true" />
+            <element signature="e#67714#67720#0" expanded="true" />
+            <element signature="e#67829#67835#1" expanded="true" />
+            <element signature="e#68157#68162#0" expanded="true" />
+            <element signature="e#73464#73469#0" expanded="true" />
+            <element signature="e#74661#74666#0" expanded="true" />
+            <element signature="e#93002#93008#1" expanded="true" />
+            <element signature="e#93155#93161#1" expanded="true" />
+            <element signature="e#94125#94131#1" expanded="true" />
+            <element signature="e#94292#94298#1" expanded="true" />
+            <element signature="e#95474#95480#1" expanded="true" />
+            <element signature="e#95627#95633#1" expanded="true" />
+            <element signature="e#96700#96706#1" expanded="true" />
+            <element signature="e#96869#96875#1" expanded="true" />
+            <element signature="e#98115#98121#1" expanded="true" />
+            <element signature="e#98268#98274#1" expanded="true" />
+            <element signature="e#100036#100042#1" expanded="true" />
+            <element signature="e#100190#100196#1" expanded="true" />
+            <element signature="e#101187#101193#1" expanded="true" />
+            <element signature="e#101363#101369#1" expanded="true" />
+            <element signature="e#102258#102264#1" expanded="true" />
+            <element signature="e#102418#102424#1" expanded="true" />
+            <element signature="e#103348#103354#1" expanded="true" />
+            <element signature="e#103502#103508#1" expanded="true" />
+            <element signature="e#104417#104423#1" expanded="true" />
+            <element signature="e#104577#104583#1" expanded="true" />
+            <element signature="e#105913#105919#1" expanded="true" />
+            <element signature="e#106819#106825#1" expanded="true" />
+            <element signature="e#106988#106994#1" expanded="true" />
+            <element signature="e#108025#108031#1" expanded="true" />
+            <element signature="e#108204#108210#1" expanded="true" />
+            <element signature="e#109345#109351#1" expanded="true" />
+            <element signature="e#109514#109520#1" expanded="true" />
+            <element signature="e#110633#110639#1" expanded="true" />
+            <element signature="e#110802#110808#1" expanded="true" />
+            <element signature="e#112182#112188#1" expanded="true" />
+            <element signature="e#112358#112364#1" expanded="true" />
+            <element signature="e#113452#113458#1" expanded="true" />
+            <element signature="e#113608#113614#1" expanded="true" />
+            <element signature="e#114619#114625#1" expanded="true" />
+            <element signature="e#114787#114793#1" expanded="true" />
+            <element signature="e#115725#115731#1" expanded="true" />
+            <element signature="e#115889#115895#1" expanded="true" />
+            <element signature="e#116804#116810#1" expanded="true" />
+            <element signature="e#116960#116966#1" expanded="true" />
+            <element signature="e#117575#117580#0" expanded="true" />
+            <element signature="e#118719#118725#1" expanded="true" />
+            <element signature="e#118880#118886#1" expanded="true" />
+            <element signature="e#120033#120039#1" expanded="true" />
+            <element signature="e#120194#120200#1" expanded="true" />
+            <element signature="e#121209#121215#1" expanded="true" />
+            <element signature="e#121378#121384#1" expanded="true" />
+            <element signature="e#122328#122334#1" expanded="true" />
+            <element signature="e#122487#122493#1" expanded="true" />
+            <element signature="e#123393#123399#1" expanded="true" />
+            <element signature="e#123550#123556#1" expanded="true" />
+            <element signature="e#123924#123929#0" expanded="true" />
+            <element signature="e#125012#125018#1" expanded="true" />
+            <element signature="e#125192#125198#1" expanded="true" />
+            <element signature="e#125779#125784#0" expanded="true" />
+            <element signature="e#125785#125790#0" expanded="true" />
+            <element signature="e#126054#126060#1" expanded="true" />
+            <element signature="e#126224#126230#1" expanded="true" />
+            <element signature="e#127273#127279#1" expanded="true" />
+            <element signature="e#127433#127439#1" expanded="true" />
+            <element signature="e#128295#128301#1" expanded="true" />
+            <element signature="e#129227#129233#1" expanded="true" />
+            <element signature="e#130131#130137#1" expanded="true" />
+            <element signature="e#130458#130464#1" expanded="true" />
+            <element signature="e#130796#130802#1" expanded="true" />
+            <element signature="e#131169#131175#1" expanded="true" />
+            <element signature="e#131543#131549#1" expanded="true" />
+            <element signature="n#style#0;n#section#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#133398#133403#0" expanded="true" />
+            <element signature="e#134322#134327#0" expanded="true" />
+            <element signature="e#135010#135015#0" expanded="true" />
+            <element signature="e#164814#164820#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#noscript#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/scraper/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/scraper/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1505" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/scraper/result.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/parsel/selector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/result.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/scraper/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/scraper/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/d/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Insight.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/scraper/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/scraper/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/lib/python3.6/urllib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/urllib3/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/bs4/element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1063">
+          <caret line="1294" column="8" selection-start-line="1294" selection-start-column="8" selection-end-line="1294" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1247971763/lxml/html/clean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-433">
+          <caret line="856" column="8" selection-start-line="856" selection-start-column="8" selection-end-line="856" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/matplotlib/table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1247971763/OpenGL_accelerate/numpy_formathandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="397" column="11" selection-start-line="397" selection-start-column="11" selection-end-line="397" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/traceback.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="517" column="17" selection-start-line="517" selection-start-column="17" selection-end-line="517" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/scraper/spiders/seekingAlpha.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/material-ui-search-bar/lib/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scraper/insight_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+          <folding>
+            <element signature="e#1503#1524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
