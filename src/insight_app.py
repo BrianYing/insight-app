@@ -64,7 +64,7 @@
 import urllib.request
 from bs4 import BeautifulSoup
 
-from flask import Flask, request
+from flask import Flask, request, render_template, jsonify
 
 app = Flask(__name__)
 
@@ -134,7 +134,8 @@ def result():
         place = request.args.get('place', None)
         if place:
             data = parse(place)
-            return data.price
+            return jsonify(data.summary)
+            # return data.price
         return "No place information is given"
 
 

@@ -31,13 +31,13 @@
 
 
 fieldset {
-  position: relative;
+  position: absolute;
   display: inline-block;
   padding: 0 0 0 40px;
   background: #fff;
   border: none;
   border-radius: 100px;
-    margin-top: 100%;
+    margin-top: 250px;
     margin-left: 5px;
 }
 
