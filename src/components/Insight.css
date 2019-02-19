@@ -191,7 +191,7 @@ a {
   color: #3e668a;
   padding: 1em 1.5em;
   position: relative;
-  text-decoration: none;
+  /*text-decoration: none;*/
   /*text-transform: uppercase;*/
 }
 

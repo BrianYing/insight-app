@@ -13,7 +13,12 @@ class App extends Component {
             "stock_price": {},
             "stock_trend": {},
             "summary": {},
-            "news": {}
+            "news": {},
+            "trans": {
+                "time": {},
+                "max_speaker": {},
+                "participants": {}
+            }
         }
     };
 
@@ -131,19 +136,46 @@ class App extends Component {
                                 {
                                     Object.keys(this.state.result.news).map((title) => {
                                         let urls = this.state.result.news;
-                                        return (<a href={urls[title]}>
-                                                    <tr>
+                                        return (<tr>
+                                                    <a href={urls[title]}>
                                                         <td>{title}</td>
-                                                    </tr>
-                                                </a>)
+                                                    </a>
+                                                </tr>)
                                     })
                                 }
-
                             </tbody>
                         </table>
 		            </div>
 
-		            <div className="box_sum3">Call Transcript:</div>
+		            <div className="box_sum3">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>CALL TRANSCRIPT</th>
+                                    <th></th>
+                                 </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Call Time</td>
+                                    <td>{this.state.result.trans.time["time"]}</td>
+                                </tr>
+                                <tr>
+                                    <td>Longest Speaker</td>
+                                    <td>{this.state.result.trans.max_speaker["max_speaker"]}</td>
+                                </tr>
+                                <tr>
+                                    <td>Participants</td>
+                                    {
+                                        Object.keys(this.state.result.trans.participants).map((i) => {
+                                            let people = this.state.result.trans.participants;
+                                            return (<tr><td>{people[i]}</td></tr>)
+                                    })
+                                }
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         )

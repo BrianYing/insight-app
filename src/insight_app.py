@@ -9,12 +9,14 @@ app = Flask(__name__)
 
 CORS(app)
 
+
 class Data:
-    def __init__(self, price, trend, summary, article):
+    def __init__(self, price, trend, summary, article, transcript):
         self.price = price
         self.trend = trend
         self.summary = summary
         self.article = article
+        self.transcript = transcript
 
     def get_price(self):
         return self.price
@@ -27,6 +29,70 @@ class Data:
 
     def get_article(self):
         return self.article
+
+    def get_transcript(self):
+        return self.transcript
+
+
+def getAddress(company):
+
+    target_page = "https://www.nasdaq.com/symbol/" + company + "/call-transcripts"
+    page = urllib.request.urlopen(target_page)
+
+    soup = BeautifulSoup(page, 'html.parser')
+
+    # transcript address
+    addresses = soup.find_all('a', href=True)
+    for address in addresses:
+        address = address['href']
+        if address[:5] == '/aspx':
+            return address
+
+
+def getCall(address):
+
+    quote_page = "https://www.nasdaq.com/" + address
+    page = urllib.request.urlopen(quote_page)
+
+    soup = BeautifulSoup(page, 'html.parser')
+
+    transcript = {}
+    # time
+    call_time = {}
+    time = soup.select('#SAarticle > p:nth-child(3)')[0].text.strip()
+    call_time["time"] = time
+    transcript["time"] = call_time
+
+    # participants
+    participants = soup.select('#SAarticle > p')
+    p_map = {}
+    i = 4
+    while participants[i].text.strip() != 'Presentation':
+        participant = participants[i].text.strip()
+        if participant != 'Conference Call Participants':
+            p_map[str(i)] = participant
+        i = i + 1
+    transcript["participants"] = p_map
+
+    # longest
+    max_sp = {}
+    speakers = soup.find_all('strong')
+    max_len = 0
+    i = 0
+    while speakers[i].text.strip() != 'Compare to:':
+        i = i + 1
+
+    i = i + 1
+    max_speaker = speakers[i].text.strip()
+    while speakers[i].text.strip() != 'Nasdaq.com':
+        speech_len = len(speakers[i].findNext().text.strip())
+        if speech_len > max_len:
+            max_len = speech_len
+            max_speaker = speakers[i].text.strip()
+        i = i + 1
+    max_sp["max_speaker"] = max_speaker
+    transcript['max_speaker'] = max_sp
+    return transcript
 
 
 def parse(company):
@@ -68,7 +134,11 @@ def parse(company):
         url = li.find_all('a')[0].get('href')
         article_dict[title] = url
 
-    return Data(stock_price, stock_trend, summary_dict, article_dict)
+    # call transcript
+    address = getAddress(company)
+    transcript = getCall(address)
+
+    return Data(stock_price, stock_trend, summary_dict, article_dict, transcript)
 
 
 @app.route('/result', methods=['GET', 'POST'])
@@ -82,7 +152,8 @@ def result():
                 "stock_price": data.price,
                 "stock_trend": data.trend,
                 "summary": data.summary,
-                "news": data.article
+                "news": data.article,
+                "trans": data.transcript
             }
             return jsonify(res)
         return "No place information is given"
