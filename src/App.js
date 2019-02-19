@@ -88,38 +88,15 @@ class App extends Component {
                                  </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1 Year Target</td>
-                                    <td>{this.state.result.summary["1 Year Target"]}</td>
-                                </tr>
-                                <tr>
-                                    <td>Today's High / Low</td>
-                                    <td>{this.state.result.summary["Today's High / Low"]}</td>
-                                </tr>
-                                <tr>
-                                    <td>Share Volume</td>
-                                    <td>{this.state.result.summary["Share Volume"]}</td>
-                                </tr>
-                                <tr>
-                                    <td>Previous Close</td>
-                                    <td>{this.state.result.summary["Previous Close"]}</td>
-                                </tr>
-                                <tr>
-                                    <td>Market Cap</td>
-                                    <td>{this.state.result.summary["Market Cap"]}</td>
-                                </tr>
-                                <tr>
-                                    <td>P/E Ratio</td>
-                                    <td>{this.state.result.summary["P/E Ratio"]}</td>
-                                </tr>
-                                <tr>
-                                    <td>Current Yield</td>
-                                    <td>{this.state.result.summary["Current Yield"]}</td>
-                                </tr>
-                                <tr>
-                                    <td>Beta</td>
-                                    <td>{this.state.result.summary["Beta"]}</td>
-                                </tr>
+                                {
+                                    Object.keys(this.state.result.summary).map((title) => {
+                                        let sums = this.state.result.summary;
+                                        return (<tr>
+                                                    <td>{title}</td>
+                                                    <td>{sums[title]}</td>
+                                                </tr>)
+                                    })
+                                }
                             </tbody>
                         </table>
                     </div>
