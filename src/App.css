@@ -115,6 +115,7 @@ button {
   position:relative;
     top: 200px;
     border-radius: 100px;
+    text-transform: uppercase;
 }
 
 .sb1:before {
@@ -127,7 +128,7 @@ button {
   border-top: 10px solid #f4e141;
   border-bottom: 10px solid transparent;
   right: 100px;
-  top: 60px;
+  top: 55px;
 }
 
 
@@ -145,6 +146,8 @@ body {
     width: 300px;
     margin: 0 auto;
     padding-top: 8rem;
+      background-attachment: fixed;
+
 }
 
 html {

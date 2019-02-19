@@ -1,73 +1,13 @@
-# from flask import Flask, jsonify, make_response, request, abort
-#
-# app = Flask(__name__, static_url_path='/public/')
-#
-# tasks = [
-#     {
-#         'id': 1,
-#         'title': u'Buy groceries',
-#         'description': u'Milk, Cheese, Pizza, Fruit, Tylenol',
-#         'done': False
-#     },
-#     {
-#         'id': 2,
-#         'title': u'Learn Python',
-#         'description': u'Need to find a good Python tutorial on the web',
-#         'done': False
-#     }
-# ]
-#
-#
-# @app.route('/')
-# def root():
-#     return app.send_static_file('index.html')
-#
-#
-# @app.route('/todo/api/tasks', methods=['GET'])
-# def getTasks():
-#     return jsonify({'tasks': tasks})
-#
-#
-# @app.route('/todo/api/addTask', methods=['POST'])
-# def add_task():
-#     if request.json['title'] == "":
-#         abort(400)
-#     task = {
-#         'id': tasks[-1]['id'] + 1,
-#         'title': request.json['title'],
-#         'description': request.json.get('description', ""),
-#         'done': False
-#     }
-#     tasks.append(task)
-#     return jsonify({'tasks': tasks}), 201
-#
-#
-# @app.route('/todo/api/deleteTask', methods=['POST'])
-# def delete_task():
-#     task_id = request.json['id']
-#     for task in tasks:
-#         if task['id'] == task_id:
-#             tasks.remove(task)
-#             return jsonify({'tasks': tasks}), 201
-#
-#
-# # 404
-# @app.errorhandler(404)
-# def not_found(error):
-#     return make_response(jsonify({'error': 'Not found'}), 404)
-#
-#
-# if __name__ == '__main__':
-#     app.run(debug=True)
-
-
+import json
 import urllib.request
 from bs4 import BeautifulSoup
 
 from flask import Flask, request, render_template, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
 
+CORS(app)
 
 class Data:
     def __init__(self, price, trend, summary, article):
@@ -97,14 +37,17 @@ def parse(company):
     soup = BeautifulSoup(page, 'html.parser')
 
     # stock_price
-    stock_price = soup.select('#qwidget_lastsale')
-    stock_price = stock_price[0].text.strip()  # strip() is used to remove starting and trailing
+    stock_price = {}
+    price = soup.select('#qwidget_lastsale')
+    price = price[0].text.strip()  # strip() is used to remove starting and trailing
+    stock_price["price"] = price
 
     # stock_trend
+    stock_trend = {}
     if soup.find('div', {'class': 'arrow-green'}):
-        stock_trend = 'Trending Up'
+        stock_trend["trend"] = 'Trending Up'
     else:
-        stock_trend = 'Trending Down'
+        stock_trend["trend"] = 'Trending Down'
 
     # summary
     summary_dict = {}
@@ -134,18 +77,16 @@ def result():
         place = request.args.get('place', None)
         if place:
             data = parse(place)
-            return jsonify(data.summary)
-            # return data.price
+            # res = data.summary
+            res = {
+                "stock_price": data.price,
+                "stock_trend": data.trend,
+                "summary": data.summary,
+                "news": data.article
+            }
+            return jsonify(res)
         return "No place information is given"
 
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-# if __name__ == '__main__':
-#     comp = 'oxy'
-#     # comp = 'gasx'
-#
-#     data = parse(comp)
-#     print(data.price)

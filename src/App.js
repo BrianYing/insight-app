@@ -1,45 +1,38 @@
 import React, { Component } from 'react';
-import Insight from './components/Insight';
+import './components/Insight.css';
 
 import './App.css';
 
 
 class App extends Component {
-    // construtor() {
-    //     this.state = {
-    //         searchHidden: false,
-    //         resultHidden: true,
-    //         query: "",
-    //         result: {}
-    //     };
-    //     this.handleClick = this.handleClick.bind(this);
-    // }
     state = {
         searchHidden: false,
         resultHidden: true,
         query: "",
-        result: undefined
+        result: {
+            "stock_price": {},
+            "stock_trend": {},
+            "summary": {},
+            "news": {}
+        }
     };
 
-    // handleClick = async () => {
-    //     const api_call = await fetch(`result?place=${this.state.query}`);
-    //     const data = await api_call.json();
-    //
-    //     this.setState({result: data});
-    //     this.setState({searchHidden: true});
-    //     this.setState({resultHidden: false});
-    // };
+    handleClick = async () => {
+        const SERVER_URL = "http://localhost:5000/result?place=" + this.state.query;
 
-    handleClick = () => {
-        const SERVER_URL = "result?place=" + this.state.query;
+        await fetch(SERVER_URL, {
+            mode: "cors"
+        })
+            .then(res => res.json())
+            .then(res => {
+                console.log("response", res);
+                this.setState({result: res, searchHidden: true, resultHidden: false})
+            });
+    };
 
-        fetch(SERVER_URL).then(res => res.json()).then(res => this.setState({result: res}));
-        this.setState({searchHidden: true});
-        this.setState({resultHidden: false});
-        // await fetch({
-        //     url: SERVER_URL,
-        //     method: "GET"
-        // }).then(res => res.json()).then(res => this.setState({result: res}));
+    handleChange = (event) => {
+        console.log("HandleChange: ", event.target.value);
+        this.setState({query: event.target.value});
     };
 
     render() {
@@ -47,21 +40,109 @@ class App extends Component {
             <div>
                 <div hidden={this.state.searchHidden} className="form">
                     <div className="box sb1">Enter Company Ticker to Search</div>
-                    <form onSubmit={this.handleClick}>
+                    {/*<form onSubmit={this.handleClick.bind(this)}>*/}
                         <fieldset>
-                            <input type = "search" name="place"/>
-                            <button type = "submit"> <i className = "fa fa-search" ></i>
-                            </button >
+                            <input type = "search" name="place" value={this.state.query} onChange={this.handleChange}/>
+                            <button type = "submit" onClick={this.handleClick.bind(this)}>
+                                <i className = "fa fa-search" ></i>
+                            </button>
                         </fieldset>
-                    </form >
+                    {/*</form >*/}
                 </div>
 
                 <div hidden={this.state.resultHidden}>
                     {/*<Insight result={this.state.result}></Insight>*/}
-		            <div className="box_title" content={this.state.query}>Company</div>
-		            <div className="box_sum" content={this.state.result}>Stock: </div>
-		            <div className="box_sum1">Summary:</div>
-		            <div className="box_sum2">Company News:</div>
+		            <div className="box_title">Company: {this.state.query}</div>
+		            <div className="box_sum">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>STOCK</th>
+                                    <th></th>
+                                 </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Stock Price</td>
+                                    <td>{this.state.result.stock_price["price"]}</td>
+                                </tr>
+                                <tr>
+                                    <td>Stock Trend</td>
+                                    <td>{this.state.result.stock_trend["trend"]}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+		            </div>
+
+		            <div className="box_sum1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUMMARY</th>
+                                    <th></th>
+                                 </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1 Year Target</td>
+                                    <td>{this.state.result.summary["1 Year Target"]}</td>
+                                </tr>
+                                <tr>
+                                    <td>Today's High / Low</td>
+                                    <td>{this.state.result.summary["Today's High / Low"]}</td>
+                                </tr>
+                                <tr>
+                                    <td>Share Volume</td>
+                                    <td>{this.state.result.summary["Share Volume"]}</td>
+                                </tr>
+                                <tr>
+                                    <td>Previous Close</td>
+                                    <td>{this.state.result.summary["Previous Close"]}</td>
+                                </tr>
+                                <tr>
+                                    <td>Market Cap</td>
+                                    <td>{this.state.result.summary["Market Cap"]}</td>
+                                </tr>
+                                <tr>
+                                    <td>P/E Ratio</td>
+                                    <td>{this.state.result.summary["P/E Ratio"]}</td>
+                                </tr>
+                                <tr>
+                                    <td>Current Yield</td>
+                                    <td>{this.state.result.summary["Current Yield"]}</td>
+                                </tr>
+                                <tr>
+                                    <td>Beta</td>
+                                    <td>{this.state.result.summary["Beta"]}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+		            <div className="box_sum2">
+		                <table>
+                            <thead>
+                                <tr>
+                                    <th>COMPANY NEWS</th>
+                                    <th></th>
+                                 </tr>
+                            </thead>
+                            <tbody>
+                                {
+                                    Object.keys(this.state.result.news).map((title) => {
+                                        let urls = this.state.result.news;
+                                        return (<a href={urls[title]}>
+                                                    <tr>
+                                                        <td>{title}</td>
+                                                    </tr>
+                                                </a>)
+                                    })
+                                }
+
+                            </tbody>
+                        </table>
+		            </div>
+
 		            <div className="box_sum3">Call Transcript:</div>
                 </div>
             </div>
